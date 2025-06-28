@@ -1,0 +1,13 @@
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/icudtl.dat
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/flutter_windows.dll
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin.json
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/assets/your_image.png
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/RAJ/Documents/Flutter/geotech_directorate_page/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
