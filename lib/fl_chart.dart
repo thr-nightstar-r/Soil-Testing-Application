@@ -10,7 +10,17 @@ class LineChartSimple extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<double> xValues = [100, 80, 63, 42, 27, 13, 10, 6, 3];
-    final List<double> y1Values = [40, 20, 10, 4.75, 2, .6, 0.425, 0.212, 0.075];
+    final List<double> y1Values = [
+      40,
+      20,
+      10,
+      4.75,
+      2,
+      .6,
+      0.425,
+      0.212,
+      0.075
+    ];
     final List<double> x3Values = [100, 100, 85, 68, 52, 35, 32, 22, 10];
 
     return Scaffold(
@@ -23,7 +33,7 @@ class LineChartSimple extends StatelessWidget {
               Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (context) => const MyApp()),
-                    (Route<dynamic> route) => false,
+                (Route<dynamic> route) => false,
               );
             },
           ),
@@ -90,7 +100,7 @@ class LineChartSimple extends StatelessWidget {
                       barWidth: 2,
                       dotData: const FlDotData(show: false),
                       belowBarData: BarAreaData(show: false),
-                      color: Colors.blue,  // Color for y1 data
+                      color: Colors.blue, // Color for y1 data
                     ),
                     LineChartBarData(
                       spots: List.generate(xValues.length, (index) {
@@ -100,7 +110,7 @@ class LineChartSimple extends StatelessWidget {
                       barWidth: 2,
                       dotData: const FlDotData(show: false),
                       belowBarData: BarAreaData(show: false),
-                      color: Colors.red,  // Color for x2 data
+                      color: Colors.red, // Color for x2 data
                     ),
                     LineChartBarData(
                       spots: List.generate(xValues.length, (index) {
@@ -110,14 +120,12 @@ class LineChartSimple extends StatelessWidget {
                       barWidth: 2,
                       dotData: const FlDotData(show: false),
                       belowBarData: BarAreaData(show: false),
-                      color: Colors.green,  // Color for x3 data
+                      color: Colors.green, // Color for x3 data
                     ),
                   ],
                   lineTouchData: const LineTouchData(
                     enabled: true,
-                    touchTooltipData: LineTouchTooltipData(
-
-                    ),
+                    touchTooltipData: LineTouchTooltipData(),
                   ),
                   extraLinesData: ExtraLinesData(
                     horizontalLines: [
@@ -145,7 +153,10 @@ class LineChartSimple extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Indicator(color: Colors.blue, text: 'weight', isSquare: false),
-                Indicator(color: Colors.red, text: 'User Entered Data', isSquare: false),
+                Indicator(
+                    color: Colors.red,
+                    text: 'User Entered Data',
+                    isSquare: false),
                 Indicator(color: Colors.green, text: 'weigth', isSquare: false),
               ],
             ),

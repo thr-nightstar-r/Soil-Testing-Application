@@ -59,7 +59,8 @@ class _LowerSoilEntryPageState extends State<LowerSoilEntryPage> {
       final double cbr = double.parse(cbrController.text);
 
       if (fines <= 100 && cbr >= 3) {
-        validationMessage = 'soil use in lower fill is ok and soil type is SQ1. Top Layer Thickness 100cm required';
+        validationMessage =
+            'soil use in lower fill is ok and soil type is SQ1. Top Layer Thickness 100cm required';
         _showValidationDialog(validationMessage, true);
       } else {
         setState(() {
@@ -113,7 +114,7 @@ class _LowerSoilEntryPageState extends State<LowerSoilEntryPage> {
               Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (context) => const MyApp()),
-                    (Route<dynamic> route) => false,
+                (Route<dynamic> route) => false,
               );
             },
           ),
@@ -145,8 +146,10 @@ class _LowerSoilEntryPageState extends State<LowerSoilEntryPage> {
                 'Fines (in %)',
                 'Fines should be <= 100',
                 Icons.linear_scale_rounded,
-                    (value) {
-                  if (value == null || double.parse(value) == null || double.parse(value) > 100) {
+                (value) {
+                  if (value == null ||
+                      double.parse(value) == Null ||
+                      double.parse(value) > 100) {
                     return 'Fines should be <= 100';
                   }
                   return null;
@@ -160,8 +163,10 @@ class _LowerSoilEntryPageState extends State<LowerSoilEntryPage> {
                 'CBR',
                 'CBR should be >= 3',
                 Icons.linear_scale_rounded,
-                    (value) {
-                  if (value == null || double.tryParse(value) == null || double.parse(value) > 3 ) {
+                (value) {
+                  if (value == null ||
+                      double.tryParse(value) == null ||
+                      double.parse(value) > 3) {
                     return 'CBR should be >= 3';
                   }
                   return null;
@@ -197,14 +202,14 @@ class _LowerSoilEntryPageState extends State<LowerSoilEntryPage> {
   }
 
   Widget _buildTextField(
-      TextEditingController controller,
-      String label,
-      String hintText,
-      IconData icon,
-      FormFieldValidator<String> validator,
-      Color color,
-      double width,
-      ) {
+    TextEditingController controller,
+    String label,
+    String hintText,
+    IconData icon,
+    FormFieldValidator<String> validator,
+    Color color,
+    double width,
+  ) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Row(
